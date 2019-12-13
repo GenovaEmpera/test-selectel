@@ -1,0 +1,27 @@
+.repositories{
+  margin-top: 20px;
+}
+.repository{
+  display: grid;
+  grid-template-columns: 10% 25% 65%;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  &-star{
+    margin: 0 auto;
+  }
+  &-count{
+    padding: 16px;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+  &-name{
+    padding: 0 20px;
+  }
+}
+img{
+  height: 40px;
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+<div class="repositories">
+  <div class="alert alert-primary" role="alert" *ngIf="!repositories?.length">
+    Репозитории не найдены
+  </div>
+  <ng-container *ngIf="repositories?.length">
+    <div class="repository" *ngFor="let rep of repositories">
+      <img class="repository-star" [src]="starIconSrc" alt="star">
+      <div class="repository-count">{{ rep.stargazers_count }}</div>
+      <div class="repository-name">{{ rep.name }}</div>
+    </div>
+  </ng-container>
+</div>

@@ -1,0 +1,6 @@
+<div class="search">
+  <input class="form-control" type="text"
+         [formControl]="search"
+         placeholder="Введите название репоизтория...">
+</div>
+<app-repositories [repositories]="searchResults"></app-repositories>
